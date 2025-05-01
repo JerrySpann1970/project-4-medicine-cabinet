@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/home.css' %}"
+/>
+{% endblock %} {% block content %}
+
+<section class="logo-container">
+  <div class="medicine-container">
+    <img id="image"
+      src="{% static 'images/splash.png' %}"
+      alt="An open medicine cabinet"
+    />
+  </div>
+  <h1 class="logotext">Medication Tracker</h1>
+</section>
+
+{% endblock %}
