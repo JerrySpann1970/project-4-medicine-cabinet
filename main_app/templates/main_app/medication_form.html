@@ -6,7 +6,11 @@
 {% block content %}
 
 <div class="page-header">
+    {% if medication %}
+    <h1>Edit {{ medication.name }}</h1>
+    {% else %}
     <h1>Add a New Prescription</h1>
+    {% endif %}
     <img src="{% static 'images/open-cabinet.png' %}" alt="An open medication cabinet" />
 </div>
 

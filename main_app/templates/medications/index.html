@@ -10,7 +10,7 @@
     {% for medication in medications %}
     <div class="card">
         <a href="{% url 'medication-detail' medication.id %}">
-            <div class="card-img-container">
+            <div class="card">
                 <img src="{% static 'images/pill-bottle.png' %}" alt="A medicine bottle" />
                 <div class="centered">
                     <h2 class="card-title">SPANN, JERRY</h2>

@@ -20,8 +20,13 @@
                 {% endif %}
                 <p>{{ medication.description }}</p>
                 <p>May Refill {{ medication.refills }} X </p>
+
+                <div class="medication-actions">
+                    <a href="{% url 'medication-update' medication.id %}" class="btn warn">Edit</a>
+                    <a href="{% url 'medication-delete' medication.id %}" class="btn danger">Delete</a>
+                </div>
             </div>
         </div>
-    </div>   
+    </div>
 </section>
 {% endblock %}

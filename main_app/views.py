@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Medication
 
 # Define the home view function
@@ -21,3 +21,13 @@ def medication_detail(request, medication_id):
 class MedicationCreate(CreateView):
     model = Medication
     fields = '__all__'
+
+class MedicationUpdate(UpdateView):
+    model = Medication
+    fields = ['strength', 'dosage', 'usage', 'quantity', 'refills']
+
+class MedicationDelete(DeleteView):
+    model = Medication
+    success_url = '/medications/'
+
+ 
