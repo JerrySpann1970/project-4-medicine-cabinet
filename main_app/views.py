@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Medication
 
 # Define the home view function
@@ -12,3 +13,11 @@ def about(request):
 def medication_index(request):
     medications = Medication.objects.all()
     return render(request, 'medications/index.html', {'medications': medications})
+
+def medication_detail(request, medication_id):
+    medication = Medication.objects.get(id=medication_id)
+    return render(request, 'medications/detail.html', {'medication': medication})
+
+class MedicationCreate(CreateView):
+    model = Medication
+    fields = '__all__'

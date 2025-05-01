@@ -23,8 +23,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="/medications">My Medication</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="{% url 'medication-index' %}">My Medication</a></li>
+                <li><a href="{% url 'medication-create' %}">Add a Prescription</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
             </ul>
         </nav>
     </header>

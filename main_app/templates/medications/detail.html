@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/medications/medication-detail.css' %}" />
+{% endblock %}
+{% block content %}
+<section class="medication-container">
+    <div class="card">
+        <div class="card-img-container">
+            <img src="{% static 'images/pill-bottle.png' %}" alt="A medicine bottle" />
+            <div class="centered">
+                <h2 class="card-title">SPANN, JERRY</h2>
+                <p>{{ medication.name }} {{ medication.strength }} TAB</p>
+                <p>{{ medication.dosage }}</p>
+                <p>{{ medication.usage}}</p>
+                {% if medication.quantity > 10 %}
+                <p>You have {{ medication.quantity }} pills left of {{ medication.name }}</p>
+                {% else %}
+                <p>You have {{ medication.quantity }} left time for a refill you will be texted</p>
+                {% endif %}
+                <p>{{ medication.description }}</p>
+                <p>May Refill {{ medication.refills }} X </p>
+            </div>
+        </div>
+    </div>   
+</section>
+{% endblock %}

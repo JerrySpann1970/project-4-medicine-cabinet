@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% load static %} {% block head %}
-<!-- <link rel="stylesheet" href="{% static 'css/cats/cat-index.css' %}" /> -->
+<link rel="stylesheet" href="{% static 'css/medications/medication-index.css' %}" />
 {% endblock %} {% block content %}
 
 <section class="page-header">
@@ -9,22 +9,24 @@
 <section class="card-container">
     {% for medication in medications %}
     <div class="card">
-        <div class="card-content">
+        <a href="{% url 'medication-detail' medication.id %}">
             <div class="card-img-container">
-                <img src="{% static 'images/sk8r-boi-cat.svg' %}" alt="A medicine bottle" />
+                <img src="{% static 'images/pill-bottle.png' %}" alt="A medicine bottle" />
+                <div class="centered">
+                    <h2 class="card-title">SPANN, JERRY</h2>
+                    <p>{{ medication.name }} {{ medication.strength }} TAB</p>
+                    <p>{{ medication.dosage }}</p>
+                    <p>{{ medication.usage}}</p>
+                    {% if medication.quantity > 10 %}
+                    <p>You have {{ medication.quantity }} pills left of {{ medication.name }}</p>
+                    {% else %}
+                    <p>You have {{ medication.quantity }} left time for a refill you will be texted</p>
+                    {% endif %}
+                    <p>{{ medication.description }}</p>
+                    <p>May Refill {{ medication.refills }} X </p>
+                </div>
             </div>
-            <h2 class="card-title">SPANN, JERRY</h2>
-            <p>{{ medication.name }} {{ medication.strength }} TAB</p>
-            <p>{{ medication.dosage }}</p>
-            <p>{{ medication.usage}}</p>
-            {% if medication.quantity > 10 %}
-            <p>You have {{ medication.quantity }} pills left of {{ medication.name }}</p>
-            {% else %}
-            <p>You have {{ medication.quantity }} left time for a refill you will be texted</p>
-            {% endif %}
-            <p>{{ medication.description }}</p>
-            <p>May Refill {{ medication.refills }} X </p>
-        </div>
+        </a>
     </div>
     {% endfor %}
 </section>
