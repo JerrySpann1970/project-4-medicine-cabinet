@@ -21,10 +21,17 @@ def medication_detail(request, medication_id):
         'medication': medication, 'dosage_form': dosage_form })
 
 def add_dosage(request, medication_id):
+    medication = Medication.objects.get(id=medication_id)
     form = DosageForm(request.POST)
+    
     if form.is_valid():
         new_dosage = form.save(commit=False)
-        new_dosage.medication_id = medication_id
+        new_dosage.medication = medication
+        
+        # Only decrement if there are pills left
+        if medication.quantity > 0:
+            medication.quantity -= 1
+            medication.save()
         new_dosage.save()
     return redirect('medication-detail', medication_id=medication_id)
 

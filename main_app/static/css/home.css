@@ -16,17 +16,17 @@ main>section {
 }
 
 #image {
-    width: 500px;
+    width: 400px;
 }
 
 .logotext {
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: rgb(8, 35, 238);
 }
 
 body {
-    background-color: rgb(1, 170, 248);
+    background-color: rgb(255, 255, 255);
 }
 
 .header-logo-container {

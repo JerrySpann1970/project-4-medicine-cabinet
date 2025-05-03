@@ -35,3 +35,6 @@ class Dosage(models.Model):
 
     def __str__(self):
         return f"{self.get_dose_display()} on {self.date}"
+    
+class Meta:
+    ordering = ['-date']
