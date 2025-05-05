@@ -1,6 +1,6 @@
 # Medication Tracker or Medicine Cabinet
 
-![Logo](main-app/static/images/README-images/logo-screen.png)
+![Logo](main_app/static/images/README-images/logo-screen.png)
 
 # Check It Out
 
