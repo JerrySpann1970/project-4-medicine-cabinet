@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 DOSES = (
     ('M', 'Morning'),
@@ -16,6 +17,7 @@ class Medication(models.Model):
     usage= models.CharField(max_length=50)
     quantity = models.IntegerField()
     refills = models.IntegerField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name

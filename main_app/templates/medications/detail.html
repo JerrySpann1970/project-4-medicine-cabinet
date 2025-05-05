@@ -14,7 +14,7 @@
     <div class="card">
         <img src="{% static 'images/pill-bottle.png' %}" alt="A medicine bottle" />
         <div class="centered">
-            <h2 class="card-title">SPANN, JERRY</h2>
+            <h2 class="card-title">{{ medication.user }}</h2>
             <p>{{ medication.name }} {{ medication.strength }} TAB</p>
             <p>{{ medication.dosage_info }}</p>
             <p>{{ medication.usage}}</p>
@@ -36,7 +36,7 @@
             <button type="submit" class="btn submit">Take Medication</button>
         </form>
         <h3 class="title">Past Dosages</h3>
-        <div='medication-details'>
+        <div class='medication-details'>
             {% if medication.dosage_set.all.count %}
             <table>
                 <thead>
@@ -51,15 +51,16 @@
                         <td class="past-dose">{{dosage.date}}</td>
                         <td class="past-dose">{{dosage.get_dose_display}}</td>
                     </tr>
+                    
                     {% endfor %}
                 </tbody>
             </table>
             {% else %}
         </div>
+        <div>
+            <p>⚠️ You have not taken your {{medication.name}} today!</p>
+        </div>
     </div>
-    <div>
-        <p>⚠️ You have not taken your {{medication.name}} today!</p>
-    </div>
-    {% endif %}
+   {% endif %}
 </section>
 {% endblock %}

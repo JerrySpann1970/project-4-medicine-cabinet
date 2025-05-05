@@ -13,7 +13,7 @@
             <div class="card">
                 <img src="{% static 'images/pill-bottle.png' %}" alt="A medicine bottle" />
                 <div class="centered">
-                    <h2 class="card-title">SPANN, JERRY</h2>
+                    <h2 class="card-title">{{ medication.user }}</h2>
                     <p>{{ medication.name }} {{ medication.strength }} TAB</p>
                     <p>{{ medication.dosage_info }}</p>
                     <p>{{ medication.usage}}</p>

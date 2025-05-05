@@ -6,6 +6,28 @@
     justify-content: center;
 }
 
+.medication-details h1 {
+    font-size: var(--font-xxl);
+    margin: 15px 0 3px;
+}
+
+.medication-details h2 {
+    font-size: var(--font-xl);
+    margin: 0 0 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.medication-details h3 {
+    margin: 20px 0 10px;
+    font-size: var(--font-l);
+}
+
+.medication-details p {
+    font-size: var(--font-reg);
+    margin: 5px 0;
+}
+
 #label {
     text-align: center;
     font-size: 40px;
@@ -104,18 +126,6 @@
 .past-dose {
     font-size: 20px;
 }
-
-/* .subsection-content p,
-.subsection-content input,
-.subsection-content select {
-    font-size: var(--font-l);
-}
-
-.subsection-content input,
-.subsection-content select {
-    margin-left: 5px;
-    padding: 3px;
-} */
 
 td {
     padding-right: 25px;
