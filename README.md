@@ -34,9 +34,9 @@ Medicine Cabinet is a place that you can go to keep track of all your medication
 
 ## Screenshots
 <img src="main_app/static/images/README-images/my-cabinet.png" alt="Medication Tracker logo" width="200"/>
-<img src="static/images/README-images/detail-screen.png" alt="Medication Tracker logo" width="200"/>
-<img src="static/images/README-images/edit-screen.png" alt="Medication Tracker logo" width="200"/>
-<img src="static/images/README-images/delete-screen.png" alt="Medication Tracker logo" width="200"/>
+<img src="main_app/static/images/README-images/detail-screen.png" alt="Medication Tracker logo" width="200"/>
+<img src="main_app/static/images/README-images/edit-screen.png" alt="Medication Tracker logo" width="200"/>
+<img src="main_app/static/images/README-images/delete-screen.png" alt="Medication Tracker logo" width="200"/>
 
 ## Attributions
 The images utilized in this software came from the following:
