@@ -2,8 +2,6 @@
 
 ![Logo](main_app/static/images/README-images/logo-screen.png)
 
-# Check It Out
-
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -24,6 +22,9 @@ Medicine Cabinet is a place that you can go to keep track of all your medication
 - **Refill Notificaiton**: This handy feature alerts the user when it is time to refill.
 - **Dosage Tracking**: Allows the user to see the doses he took for certain medications throughout the day.
 - **Pharmacy Listing**: Gives the user a link to their local pharmacies.  Hard coded at the moment Proof of concept.
+
+## Getting Started
+[Deployment](Weblink here)
 
 ## Technologies Used
 - **Django**
