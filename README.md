@@ -41,9 +41,9 @@ Medicine Cabinet is a place that you can go to keep track of all your medication
 ## Attributions
 The images utilized in this software came from the following:
 bottle.png was created in Microsoft Paint by Jerry Spann
-pill-bottle.png was furnished by Fine Art of America. https://fineartamerica.com/featured/pill-bottle-on-white-background-joe-belanger.html
-open-cabinet.png was provided by FREEPIX.com. https://www.freepik.com/icons/medicine-cabinet
-splash.png was obtained from Clipart Library. https://clipart-library.com/clipart/559084.htm
+[Fine-Art-of-America] (https://fineartamerica.com/featured/pill-bottle-on-white-background-joe-belanger.html)
+[FREEPIX] (https://www.freepik.com/icons/medicine-cabinet)
+[Clipart-Library] (https://clipart-library.com/clipart/559084.htm)
 
 ## Next Steps
 - **Real Time Pharmacy Listing**: Would like to add in the future a real time pharmacy listing.
