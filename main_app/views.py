@@ -10,6 +10,9 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
+def pharmacies(request):
+    return render(request, 'pharmacies.html')
+ 
 def medication_index(request):
     medications = Medication.objects.all()
     return render(request, 'medications/index.html', {'medications': medications})
